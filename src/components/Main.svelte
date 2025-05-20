@@ -56,6 +56,14 @@
 				'Create, read, update and delete your business cards with this application. Authentication with JWT.',
 			link: 'https://github.com/suryanshu-09/Business-Cards',
 			stack: ['Mongo', 'Express', 'React', 'Node.js']
+		},
+		{
+			title: 'Portfolio',
+			img: 'assets/preview.jpg',
+			description:
+				'This very website was built with SvelteKit. I created it as a project to explore the hype around Svelte and learn along the way.',
+			link: 'https://suryanshu-profile.vercel.app',
+			stack: ['SvelteKit', 'Vercel', 'Svelte5', 'TypeScript']
 		}
 	];
 </script>
@@ -91,16 +99,7 @@
 	<section class="flex flex-col gap-24 py-20 lg:py-32" id="projects">
 		<div class="flex flex-col gap-2 text-center">
 			<h6 class="text-large sm:text-xl md:text-2xl">A few of my creative endeavors.</h6>
-			<div>
-				<h3 class="my-4 text-3xl font-semibold text-violet-400 sm:text-4xl md:text-5xl lg:my-6">
-					UI/UX
-				</h3>
-				<div class="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 2xl:grid-cols-3">
-					{#each ui_ux as { title, img, description, link }, index (index)}
-						<Project {title} {img} {description} {link} />
-					{/each}
-				</div>
-			</div>
+
 			<div>
 				<h3 class="my-4 text-3xl font-semibold text-violet-400 sm:text-4xl md:text-5xl lg:my-6">
 					Development
@@ -108,6 +107,17 @@
 				<div class="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 2xl:grid-cols-3">
 					{#each dev as { title, img, description, link, stack }, index (index)}
 						<Project {title} {img} {description} {link} {stack} />
+					{/each}
+				</div>
+			</div>
+
+			<div>
+				<h3 class="my-4 text-3xl font-semibold text-violet-400 sm:text-4xl md:text-5xl lg:my-6">
+					UI/UX
+				</h3>
+				<div class="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 2xl:grid-cols-3">
+					{#each ui_ux as { title, img, description, link }, index (index)}
+						<Project {title} {img} {description} {link} />
 					{/each}
 				</div>
 			</div>
