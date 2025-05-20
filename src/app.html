@@ -27,24 +27,14 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover" class="relative bg-slate-950 text-white">
-		<!-- SvelteKit root -->
 		<div style="display: contents" class="relative z-[1]">%sveltekit.body%</div>
 
-		<!-- Particle background -->
-		<div class="fixed inset-0 -z-10 opacity-70">
-			<div id="particles-js" class="h-full w-full"></div>
+		<div class="absolute top-0 left-0 z-[-1] min-h-screen w-full opacity-70">
+			<div id="particles-js" class="absolute inset-0" />
 		</div>
-
-		<!-- Load particles.js after DOM is ready -->
 		<script>
-			window.addEventListener('DOMContentLoaded', () => {
-				if (window.particlesJS) {
-					particlesJS.load('particles-js', '/assets/particles.json', function () {
-						console.log('callback - particles.js config loaded');
-					});
-				} else {
-					console.error('particlesJS is not available on window');
-				}
+			particlesJS.load('particles-js', 'assets/particles.json', function () {
+				console.log('callback - particles.js config loaded');
 			});
 		</script>
 	</body>
