@@ -3,12 +3,6 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
-			integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -30,8 +24,21 @@
 	<body data-sveltekit-preload-data="hover" class="relative bg-slate-950 text-white">
 		<div style="display: contents" class="relative z-[1]">%sveltekit.body%</div>
 
-		<div class="absolute top-0 left-0 z-[-1] min-h-screen w-full opacity-70">
+		<div class="absolute top-0 left-0 z-[-1] min-h-screen min-w-screen opacity-70">
 			<div id="particles-js" class="absolute inset-0" />
 		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+			integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+			particlesJS.load('particles-js', '/assets/particles.json', function () {
+				console.log('Particles.js config loaded');
+			});
+		</script>
 	</body>
 </html>

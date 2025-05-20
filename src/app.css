@@ -50,3 +50,7 @@ h3,
 		transform: translateX(-50%);
 	}
 }
+
+#particles-js {
+	background-color: rgba(255, 0, 0, 0.1);
+}
