@@ -9,7 +9,7 @@
 	let { title, description, link, img, stack }: ProjectProps = $props();
 </script>
 
-<div class="max-w-[85%] rounded-md border border-violet-400 p-4 md:max-w-full">
+<div class="max-w-[90%] rounded-md border border-violet-400 p-4 md:max-w-full">
 	<div class="h-[300px] w-full overflow-hidden duration-250 hover:scale-125">
 		<img src={img} alt={title} class="h-full w-full rounded-md object-cover" />
 	</div>
