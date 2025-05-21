@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
 
-	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
 	import '../app.css';
 	let y = $state(0);
@@ -28,12 +27,7 @@
 			<i class="fa-solid fa-arrow-up"></i>
 		</button>
 	</div>
-	<div class="flex justify-center">
-		<div class="max-w-[1400px]">
-			<Header {y} />
-			{@render children()}
-		</div>
-	</div>
-	<Footer />
+	<Header {y} />
+	{@render children()}
 </div>
 <svelte:window bind:scrollY={y} />
