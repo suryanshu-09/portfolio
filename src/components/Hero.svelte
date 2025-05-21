@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="relative grid place-items-center shadow-2xl">
-			<img src="assets/profilepic.png" alt="Profile Pic" class="z-[2] max-h-[70vh] object-cover" />
+			<img src="assets/profilepic.png" alt="Profile Pic" class="z-[2] max-h-[80vh] object-cover" />
 		</div>
 	</section>
 </div>

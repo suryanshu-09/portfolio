@@ -47,7 +47,7 @@
 		},
 		{
 			title: 'Portfolio',
-			img: 'assets/preview.jpg',
+			img: 'assets/preview.png',
 			description:
 				'This very website was built with SvelteKit. I created it as a project to explore the hype around Svelte and learn along the way.',
 			link: 'https://suryanshu-profile.vercel.app',

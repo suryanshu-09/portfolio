@@ -15,8 +15,8 @@
 <div class="flex max-w-[1400px] flex-1 flex-col py-4" id="stack">
 	<section class="flex flex-col gap-24 py-20 lg:pt-32 lg:pb-0">
 		<div class="flex flex-col gap-2">
-			<div class="flex justify-center lg:mr-12 lg:justify-end">
-				<div class="text-center lg:text-right">
+			<div class="mb-3 flex justify-center">
+				<div class="text-center">
 					<h1 class="my-4 text-3xl font-semibold text-white sm:text-4xl md:text-5xl lg:my-6">
 						Current <span class="text-violet-400">technologies</span>
 					</h1>
@@ -37,7 +37,7 @@
 				>
 					{#each technologies as { title, icon, description } (title)}
 						<div
-							class="flex max-w-[90%] min-w-[50vw] justify-between gap-4 rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 p-4 duration-200 hover:scale-110 sm:max-w-full sm:min-w-1"
+							class="sm:min-50-[vw] flex w-[50vw] max-w-[90%] justify-between gap-4 rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 p-4 duration-200 hover:scale-110 sm:max-w-full sm:min-w-1"
 						>
 							<div>
 								<Icon {icon} width="56px" height="56px" />

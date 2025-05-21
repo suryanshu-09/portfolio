@@ -1,7 +1,7 @@
 <script lang="ts">
 	let about = [
 		{
-			name: 'a passionate developer',
+			name: 'a developer in making',
 			description:
 				"My love for computers began when I got my first personal computer in 9th grade. Ever since, I've been breaking my Arch setup and fixing it. This passion for figuring things out has led me to write my own scripts and applets*, building software I actually use myself."
 		},
@@ -11,7 +11,7 @@
 				'Carefully crafting and designing meaningful user experiences allows me to express and experiment with every morsel of creativity I have. I enjoy the challenge of learning new design concepts and enabling users with delightful online experiences.'
 		},
 		{
-			name: 'an avid follower of the RTFM cult',
+			name: 'an avid follower of the cult of RTFM',
 			description:
 				"Diving deep into manuals and tinkering with software is how I learn best. It's how I riced my Hyprland setup, and now I'm learning Go by exploring the official docs and building a TUI frontend for WhatsApp."
 		}
