@@ -2,6 +2,6 @@
 
 Made in **SvelteKit**
 
-### Now [deployed](https://suryanshu-profile.vercel.app)
+### Now [deployed](https://find-suryanshu.vercel.app)
 
 ![Preview](./static/assets/preview.jpg)
