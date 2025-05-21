@@ -1,7 +1,7 @@
 <script lang="ts">
 	let about = [
 		{
-			name: 'a developer in making',
+			name: 'a developer in the making',
 			description:
 				"My love for computers began when I got my first personal computer in 9th grade. Ever since, I've been breaking my Arch setup and fixing it. This passion for figuring things out has led me to write my own scripts and applets*, building software I actually use myself."
 		},

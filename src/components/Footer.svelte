@@ -43,5 +43,19 @@
 				</sup>
 			</a>
 		</div>
+
+		<div class="flex w-full items-center justify-between sm:hidden">
+			<b>Resume</b>
+			<a
+				href="assets/Suryanshu_Resume.pdf"
+				target="_blank"
+				class="inline-flex items-center gap-1 text-right text-violet-400"
+			>
+				Suryanshu's Resume
+				<sup class="text-xs">
+					<i class="fa-solid fa-arrow-up-right-from-square scale-75"></i>
+				</sup>
+			</a>
+		</div>
 	</div>
 </footer>

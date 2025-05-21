@@ -27,14 +27,14 @@
 					<p>{tab.name}</p>
 				</a>
 			{/each}
-			<a href="https://github.com/suryanshu-09" target="_blank">
+			<a href="assets/Suryanshu_Resume.pdf" target="_blank">
 				<button
 					class="blueShadow group relative overflow-hidden rounded-full bg-white px-5 py-2 text-slate-950"
 				>
 					<div
 						class="absolute top-0 right-full z-0 h-full w-full bg-violet-400 opacity-40 duration-200 group-hover:translate-x-full"
 					></div>
-					<div class="relative z-9">Get in touch</div>
+					<div class="relative z-9">Get my Resume</div>
 				</button>
 			</a>
 		</div>

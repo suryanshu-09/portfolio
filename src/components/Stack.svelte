@@ -37,7 +37,7 @@
 				>
 					{#each technologies as { title, icon, description } (title)}
 						<div
-							class="sm:min-50-[vw] flex w-[50vw] max-w-[90%] justify-between gap-4 rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 p-4 duration-200 hover:scale-110 sm:max-w-full sm:min-w-1"
+							class="sm:min-50-[vw] flex w-[70vw] max-w-[90%] justify-between gap-4 overflow-hidden rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 p-4 duration-200 hover:scale-110 sm:max-w-full sm:min-w-1"
 						>
 							<div>
 								<Icon {icon} width="56px" height="56px" />
