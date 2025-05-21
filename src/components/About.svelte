@@ -3,17 +3,17 @@
 		{
 			name: 'a developer in the making',
 			description:
-				"My love for computers began when I got my first personal computer in 9th grade. Ever since, I've been breaking my Arch setup and fixing it. This passion for figuring things out has led me to write my own scripts and applets*, building software I actually use myself."
+				"My love for computers began when I got my first personal computer in 9th grade. Ever since, I've been breaking my <span class='font-semibold text-violet-400'>Arch</span> setup and fixing it. This passion for figuring things out has led me to write my own scripts and applets*, <span class='font-semibold text-violet-400'>building software</span> I actually use myself."
 		},
 		{
 			name: 'a product design & UX fanatic',
 			description:
-				'Carefully crafting and designing meaningful user experiences allows me to express and experiment with every morsel of creativity I have. I enjoy the challenge of learning new design concepts and enabling users with delightful online experiences.'
+				"Carefully crafting and designing <span class='font-semibold text-violet-400'>meaningful user experiences</span> allows me to express and experiment with every morsel of creativity I have. I enjoy the challenge of learning new <span class='font-semibold text-violet-400'>design concepts</span> and enabling users with delightful online experiences."
 		},
 		{
 			name: 'an avid follower of the cult of RTFM',
 			description:
-				"Diving deep into manuals and tinkering with software is how I learn best. It's how I riced my Hyprland setup, and now I'm learning Go by exploring the official docs and building a TUI frontend for WhatsApp."
+				"Diving deep into manuals and <span class='font-semibold text-violet-400'>tinkering with software</span> is how I learn best. It's how I riced my Hyprland setup, and now I'm <span class='font-semibold text-violet-400'>learning Go</span> by exploring the official docs and building a <span class='font-semibold text-violet-400'>TUI frontend for WhatsApp</span>."
 		}
 	];
 </script>
@@ -42,7 +42,7 @@
 						<h3 class="text-2xl sm:text-3xl md:text-5xl">
 							{me.name}
 						</h3>
-						<p>{me.description}</p>
+						<p>{@html me.description}</p>
 					</div>
 				</div>
 			{/each}
