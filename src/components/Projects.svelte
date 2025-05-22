@@ -102,7 +102,7 @@
 		{#if stack}
 			<div class="scroll-banner mt-3">
 				<div class="scroll-banner-inner gap-6">
-					{#each [...stack, ...stack] as tech, index (index)}
+					{#each [...stack, ...stack, ...stack] as tech, index (index)}
 						<div
 							class="rounded-sm border border-violet-400 p-2 font-semibold text-white duration-200 hover:bg-white hover:text-slate-950"
 						>
