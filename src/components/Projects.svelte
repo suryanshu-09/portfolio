@@ -12,19 +12,19 @@
 			title: 'Voting App',
 			img: 'assets/votingapp.png',
 			description:
-				'Designed a voting application from scratch (from wireframe to prototyping) in figma as part of my internship.',
+				'Designed a voting application from scratch (from wireframe to prototyping) as part of my internship.',
 			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=1-5'
 		},
 		{
 			title: 'Travelling App',
 			img: 'assets/travellingapp.png',
-			description: 'Desgined a travelling app from scratch for a design hackathon in figma.',
+			description: 'Desgined a travelling app from scratch for a design hackathon.',
 			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=2-1054'
 		},
 		{
 			title: 'Web Pages',
 			img: 'assets/webpages.png',
-			description: 'Designed websites as part of my internship in figma.',
+			description: 'Designed and redesigned websites as part of my internship.',
 			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=1-3'
 		}
 	];
