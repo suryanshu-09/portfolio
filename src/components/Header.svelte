@@ -8,7 +8,7 @@
 	];
 </script>
 
-<header class="sticky top-0 z-[10] flex justify-center bg-transparent duration-200">
+<header class="sticky top-2 z-[10] mx-2 flex justify-center bg-transparent duration-200">
 	<div
 		class={'flex w-full max-w-[1400px] items-center justify-between rounded-md border border-solid px-6 ' +
 			(y > 0 ? ' border-violet-950 bg-slate-950 py-4' : ' border-transparent bg-transparent py-6')}

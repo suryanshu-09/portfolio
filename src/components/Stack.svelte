@@ -1,19 +1,26 @@
 <script lang="ts">
+	import CardContent from '$lib/components/ui/card/card-content.svelte';
+	import Card from '$lib/components/ui/card/card.svelte';
+	import CarouselContent from '$lib/components/ui/carousel/carousel-content.svelte';
+	import CarouselItem from '$lib/components/ui/carousel/carousel-item.svelte';
+	import CarouselNext from '$lib/components/ui/carousel/carousel-next.svelte';
+	import CarouselPrevious from '$lib/components/ui/carousel/carousel-previous.svelte';
+	import Carousel from '$lib/components/ui/carousel/carousel.svelte';
 	import Icon from '@iconify/svelte';
 	let technologies = [
-		{ title: 'Figma', icon: 'logos:figma', description: 'Design Tool' },
-		{ title: 'Next.js', icon: 'logos:nextjs-icon', description: 'FullStack Framework' },
-		{ title: 'TypeScript', icon: 'logos:typescript-icon', description: 'JavaScript but better' },
-		{ title: 'SvelteKit', icon: 'logos:svelte-icon', description: 'FullStack Framework' },
 		{ title: 'Golang', icon: 'logos:gopher', description: "World's simplest language" },
+		{ title: 'TypeScript', icon: 'logos:typescript-icon', description: 'JavaScript but better' },
+		{ title: 'Next.js', icon: 'logos:nextjs-icon', description: 'FullStack Framework' },
+		{ title: 'AWS', icon: 'logos:aws', description: 'Cloud Computing' },
+		{ title: 'SvelteKit', icon: 'logos:svelte-icon', description: 'FullStack Framework' },
 		{ title: 'Docker', icon: 'logos:docker-icon', description: 'Containerisation Tool' },
 		{ title: 'Git', icon: 'logos:git-icon', description: 'Version Control System' },
-		{ title: 'AWS', icon: 'logos:aws', description: 'Cloud Computing' }
+		{ title: 'Figma', icon: 'logos:figma', description: 'Design Tool' }
 	];
 </script>
 
-<div class="flex max-w-[1400px] flex-1 flex-col py-4" id="stack">
-	<section class="flex flex-col gap-24 py-20 lg:pt-32 lg:pb-0">
+<div class="flex max-w-[1400px] flex-1 flex-col sm:py-4" id="stack">
+	<section class="flex flex-col sm:gap-24 sm:py-20 lg:pt-32 lg:pb-0">
 		<div class="flex flex-col gap-2">
 			<div class="mb-3 flex justify-center">
 				<div class="text-center">
@@ -31,13 +38,13 @@
 				</div>
 			</div>
 
-			<div class="flex justify-center text-right sm:mx-16 md:mx-10">
+			<div class="hidden justify-center text-right sm:mx-16 sm:flex md:mx-10">
 				<div
 					class="mt-4 grid w-full grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 sm:justify-items-normal md:grid-cols-3 lg:grid-cols-4"
 				>
 					{#each technologies as { title, icon, description } (title)}
 						<div
-							class="sm:min-50-[vw] flex w-[70vw] max-w-[90%] justify-between gap-4 overflow-hidden rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 p-4 duration-200 hover:scale-110 sm:max-w-full sm:min-w-1"
+							class="flex w-[60vw] justify-between gap-4 overflow-hidden rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 p-4 duration-200 hover:scale-110 sm:max-w-[40vw] md:max-w-[30vw] lg:max-w-[22vw] xl:max-w-[20vw] 2xl:max-w-[16vw]"
 						>
 							<div>
 								<Icon {icon} width="56px" height="56px" />
@@ -49,6 +56,31 @@
 						</div>
 					{/each}
 				</div>
+			</div>
+			<div class="text-right sm:hidden">
+				<Carousel class="mt-4 w-[95vw] gap-12">
+					<CarouselContent class="h-[20vh]">
+						{#each technologies as { title, icon, description } (title)}
+							<CarouselItem class="mt-10 -ml-8 basis-3/5">
+								<Card
+									class="h-[12vh] w-[50vw] gap-4 rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 pb-4 duration-200 hover:scale-110"
+								>
+									<CardContent class="grid grid-cols-2">
+										<div>
+											<Icon {icon} width="56px" height="56px" />
+										</div>
+										<div class="flex flex-col gap-2">
+											<p class="font-bold text-white">{title}</p>
+											<p class="text-gray-600">{description}</p>
+										</div>
+									</CardContent>
+								</Card>
+							</CarouselItem>
+						{/each}
+					</CarouselContent>
+					<CarouselPrevious class="left-2" />
+					<CarouselNext class="right-2" />
+				</Carousel>
 			</div>
 		</div>
 	</section>
