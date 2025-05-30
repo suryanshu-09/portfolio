@@ -58,28 +58,26 @@
 				</div>
 			</div>
 			<div class="text-right sm:hidden">
-				<Carousel class="mt-4 w-[95vw] gap-12">
-					<CarouselContent class="h-[20vh]">
+				<Carousel class="mt-4 w-[95vw]">
+					<CarouselContent class="flex h-[280px] gap-[60px]">
 						{#each technologies as { title, icon, description } (title)}
-							<CarouselItem class="mt-10 -ml-8 basis-3/5">
+							<CarouselItem class="mx-8 mt-10 basis-2/5">
 								<Card
-									class="h-[12vh] w-[50vw] gap-4 rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 pb-4 duration-200 hover:scale-110"
+									class="h-[150px] w-[90vw] max-w-[227px] gap-4 overflow-hidden rounded-md border border-violet-400 bg-linear-to-r from-slate-800 to-slate-950 duration-200 hover:scale-110"
 								>
-									<CardContent class="grid grid-cols-2">
-										<div>
-											<Icon {icon} width="56px" height="56px" />
-										</div>
-										<div class="flex flex-col gap-2">
-											<p class="font-bold text-white">{title}</p>
-											<p class="text-gray-600">{description}</p>
-										</div>
+									<CardContent class="grid grid-cols-2 gap-2 text-nowrap">
+										<Icon {icon} width="48px" height="48px" />
+										<p class="text-md self-center font-bold text-white">{title}</p>
+										<p class="text-md col-span-2 w-full text-center text-gray-600">
+											{description}
+										</p>
 									</CardContent>
 								</Card>
 							</CarouselItem>
 						{/each}
 					</CarouselContent>
-					<CarouselPrevious class="left-2" />
-					<CarouselNext class="right-2" />
+					<CarouselPrevious class="top-30 left-2" />
+					<CarouselNext class="top-30 right-2" />
 				</Carousel>
 			</div>
 		</div>

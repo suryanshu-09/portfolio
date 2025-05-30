@@ -68,7 +68,7 @@
 	];
 </script>
 
-<main class="flex flex-1 flex-col p-4">
+<main class="flex flex-1 flex-col sm:p-4">
 	<section class="flex flex-col gap-24 py-20 lg:py-32" id="projects">
 		<div class="flex flex-col gap-2 text-center">
 			<h6 class="text-large sm:text-xl md:text-2xl">A few of my creative endeavors.</h6>
@@ -83,8 +83,8 @@
 				<!-- 	{/each} -->
 				<!-- </div> -->
 				<div class="mx-auto w-full">
-					<Carousel class="p-15">
-						<CarouselContent class="mx-auto -ml-1 max-w-[90vw] gap-4">
+					<Carousel class="sm:p-2">
+						<CarouselContent class="mx-auto -ml-4 sm:max-w-[90vw] sm:gap-4">
 							{#each dev as { title, img, description, link, stack }, index (index)}
 								{@render projectCarousel({ title, img, description, link, stack })}
 							{/each}
@@ -105,8 +105,8 @@
 				<!-- 	{/each} -->
 				<!-- </div> -->
 				<div class="mx-auto w-full">
-					<Carousel class="p-15">
-						<CarouselContent class="mx-auto -ml-1 max-w-[90vw] gap-4">
+					<Carousel class="sm:p-2">
+						<CarouselContent class="mx-auto -ml-4 sm:max-w-[90vw] sm:gap-4">
 							{#each ui_ux as { title, img, description, link }, index (index)}
 								{@render projectCarousel({ title, img, description, link })}
 							{/each}
@@ -150,7 +150,7 @@
 <!-- {/snippet} -->
 
 {#snippet projectCarousel({ title, img, description, link, stack }: ProjectProps)}
-	<CarouselItem class="pl-1 md:basis-4/5 lg:basis-1/2 xl:basis-2/5 2xl:basis-1/3">
+	<CarouselItem class="ml-4 pl-1 md:basis-4/5 lg:basis-1/2 xl:basis-2/5 2xl:basis-1/3">
 		<div class="p-1">
 			<Card.Root class="overflow-hidden rounded-md border border-violet-400 md:max-w-[55vw]">
 				<Card.Content class="flex-col items-center justify-center p-6">
