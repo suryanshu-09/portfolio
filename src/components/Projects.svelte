@@ -41,14 +41,15 @@
 			description:
 				'WebMellon is a full-stack bookmark aggregator that lets users create, manage, and organize catalogues of websites.',
 			link: 'https://webmellon.vercel.app/',
-			stack: ['Next.js', 'NextAuth', 'Docker', 'Shadcn']
+			stack: ['Next.js', 'NextAuth', 'Docker', 'Shadcn', 'Postgres']
 		},
 		{
 			title: 'We Go Wayback',
 			img: 'assets/wegowayback.png',
-			description: "A Golang Implementation of Internet Archive's wayback_discover_diff.",
+			description:
+				"A Golang Implementation of Wayback Machine's wayback_discover_diff. Serves with Go-Chi and Asynq for managing jobs with Redis for backend support.",
 			link: 'https://github.com/suryanshu-09/we-go-wayback',
-			stack: ['Golang', 'Python', 'Redis', 'Simhash']
+			stack: ['Golang', 'Python', 'Redis', 'Simhash', 'Asynq', 'Go-Chi', 'Http']
 		},
 		{
 			title: 'RSS Feed',
@@ -61,7 +62,7 @@
 		{
 			title: 'Simhash',
 			img: 'assets/wegowayback.png',
-			description: 'A Golang Implementation of Simhash. Written for We Go Wayback',
+			description: 'A Golang Implementation of the Simhash Algorithm. Written for We Go Wayback',
 			link: 'https://github.com/suryanshu-09/simhash',
 			stack: ['Golang', 'Python', 'Simhash']
 		}
