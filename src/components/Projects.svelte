@@ -61,7 +61,7 @@
 		},
 		{
 			title: 'Simhash',
-			img: 'assets/wegowayback.png',
+			img: 'assets/simhash.png',
 			description: 'A Golang Implementation of the Simhash Algorithm. Written for We Go Wayback',
 			link: 'https://github.com/suryanshu-09/simhash',
 			stack: ['Golang', 'Python', 'Simhash']
