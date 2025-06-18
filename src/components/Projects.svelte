@@ -39,17 +39,26 @@
 			title: 'Webmellon',
 			img: 'assets/webmellon.jpg',
 			description:
-				'WebMellon is a full-stack bookmark aggregator that lets users create, manage, and organize catalogues of websites.',
+				'WebMellon is a full-stack bookmark aggregator that lets users create, manage, and organize catalogues of websites which uses Prometheus for metrics and Grafana for visualisation',
 			link: 'https://webmellon.vercel.app/',
-			stack: ['Next.js', 'NextAuth', 'Docker', 'Shadcn', 'Postgres']
+			stack: [
+				'Next.js',
+				'NextAuth',
+				'Docker',
+				'Shadcn',
+				'Postgres',
+				'Prisma',
+				'Prometheus',
+				'Grafana'
+			]
 		},
 		{
 			title: 'We Go Wayback',
-			img: 'assets/demo.gif',
+			img: 'assets/we-go-wayback.gif',
 			description:
 				"A Golang Implementation of Wayback Machine's wayback_discover_diff. Serves with Go-Chi, Asynq for managing jobs with Redis for backend support and Statsd for metrics.",
 			link: 'https://github.com/suryanshu-09/we-go-wayback',
-			stack: ['Golang', 'Python', 'Redis', 'Simhash', 'Asynq', 'Go-Chi', 'Http', 'Statsd']
+			stack: ['Golang', 'Python', 'Redis', 'Simhash', 'Asynq', 'Go-Chi', 'Http', 'Statsd', 'Docker']
 		},
 		{
 			title: 'RSS Feed',
