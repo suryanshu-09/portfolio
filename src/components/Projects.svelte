@@ -32,6 +32,12 @@
 			img: 'assets/webpages.png',
 			description: 'Designed and redesigned websites as part of my internship.',
 			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=1-3'
+		},
+		{
+			title: 'Prototypes',
+			img: 'assets/prototypes.png',
+			description: 'Desgined custom prototypes like paralax and animated background.',
+			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=1-2'
 		}
 	];
 	let dev = [
