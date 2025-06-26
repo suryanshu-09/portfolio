@@ -13,7 +13,7 @@
 		{
 			name: 'an avid follower of the cult of RTFM',
 			description:
-				"Diving deep into manuals and <span class='font-semibold text-violet-400'>tinkering with software</span> is how I learn best. It's how I riced my Hyprland setup, and now I'm <span class='font-semibold text-violet-400'>learning Go</span> by exploring the official docs and building a <span class='font-semibold text-violet-400'>TUI frontend for WhatsApp</span>."
+				"Diving deep into manuals and <span class='font-semibold text-violet-400'>tinkering with software</span> is how I learn best. It's how I riced my Hyprland setup, and now I'm <span class='font-semibold text-violet-400'>learning Go</span> by exploring the official docs and building <span class='font-semibold text-violet-400'>CLI and TUI tools I use myself</span>."
 		}
 	];
 </script>
