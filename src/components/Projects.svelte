@@ -42,6 +42,14 @@
 	];
 	let dev = [
 		{
+			title: 'Hulaki',
+			img: 'assets/hulaki.gif',
+			description:
+				'Hulaki brings the power of Postman to your terminal. Crafted with Go, Cobra, and Fang for CLI magic, and powered by Huh and Bubbletea for an elegant TUI experience. Seamlessly test APIs — from HTTP and GraphQL to gRPC — all without leaving your terminal.',
+			link: 'https://github.com/suryanshu-09/hulaki',
+			stack: ['Go', 'Cobra', 'Bubbletea', 'Postman', 'HTTP', 'GraphQl', 'gRPC']
+		},
+		{
 			title: 'Webmellon',
 			img: 'assets/webmellon.jpg',
 			description:
