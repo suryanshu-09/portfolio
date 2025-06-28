@@ -15,6 +15,12 @@
 
 	let ui_ux = [
 		{
+			title: 'Travelling App',
+			img: 'assets/travellingapp.png',
+			description: 'Desgined a travelling app from scratch for a design hackathon.',
+			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=2-1054'
+		},
+		{
 			title: 'Voting App',
 			img: 'assets/votingapp.png',
 			description:
@@ -22,15 +28,10 @@
 			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=1-5'
 		},
 		{
-			title: 'Travelling App',
-			img: 'assets/travellingapp.png',
-			description: 'Desgined a travelling app from scratch for a design hackathon.',
-			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=2-1054'
-		},
-		{
 			title: 'Web Pages',
 			img: 'assets/webpages.png',
-			description: 'Designed and redesigned websites as part of my internship.',
+			description:
+				'Designed and redesigned web-components and hero sections as part of my internship.',
 			link: 'https://www.figma.com/design/RzDbm61DtOjMPO8k3CYygb/Portfolio?node-id=1-3'
 		},
 		{
@@ -108,13 +109,13 @@
 				<!-- </div> -->
 				<div class="mx-auto w-full">
 					<Carousel class="sm:p-2">
-						<CarouselContent class="mx-auto -ml-4 sm:max-w-[90vw] sm:gap-4">
+						<CarouselContent class="mx-auto -ml-4 max-w-[90vw] sm:gap-4">
 							{#each dev as { title, img, description, link, stack }, index (index)}
 								{@render projectCarousel({ title, img, description, link, stack })}
 							{/each}
 						</CarouselContent>
-						<CarouselPrevious class="left-2" />
-						<CarouselNext class="right-2" />
+						<CarouselPrevious class=" left-2 md:-left-10 2xl:-left-15" />
+						<CarouselNext class="right-2 md:-right-10 2xl:-right-15" />
 					</Carousel>
 				</div>
 			</div>
@@ -130,13 +131,13 @@
 				<!-- </div> -->
 				<div class="mx-auto w-full">
 					<Carousel class="sm:p-2">
-						<CarouselContent class="mx-auto -ml-4 sm:max-w-[90vw] sm:gap-4">
+						<CarouselContent class="mx-auto -ml-4 max-w-[90vw] sm:gap-4">
 							{#each ui_ux as { title, img, description, link }, index (index)}
 								{@render projectCarousel({ title, img, description, link })}
 							{/each}
 						</CarouselContent>
-						<CarouselPrevious class="left-2" />
-						<CarouselNext class="right-2" />
+						<CarouselPrevious class="left-2 md:-left-10 2xl:-left-15" />
+						<CarouselNext class="right-2 md:-right-10 2xl:-right-15" />
 					</Carousel>
 				</div>
 			</div>
@@ -174,7 +175,7 @@
 <!-- {/snippet} -->
 
 {#snippet projectCarousel({ title, img, description, link, stack }: ProjectProps)}
-	<CarouselItem class="ml-4 pl-1 md:basis-4/5 lg:basis-1/2 xl:basis-2/5 2xl:basis-1/3">
+	<CarouselItem class="ml-4 pl-1 md:basis-3/5 lg:basis-1/2 xl:basis-2/5 2xl:basis-48/100">
 		<div class="p-1">
 			<Card.Root class="overflow-hidden rounded-md border border-violet-400 md:max-w-[55vw]">
 				<Card.Content class="flex-col items-center justify-center p-6">

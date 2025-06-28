@@ -10,9 +10,15 @@
 	<div class="max-w-[1400px]">
 		<Hero />
 		<Stack />
+		<!-- <Projects /> -->
+		<!-- <About /> -->
 	</div>
 </div>
-<Projects />
+<div class="flex justify-center">
+	<div class="max-w-[1400px]">
+		<Projects />
+	</div>
+</div>
 
 <div class="flex justify-center">
 	<div class="max-w-[1400px]">
