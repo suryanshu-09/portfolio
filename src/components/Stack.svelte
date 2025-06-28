@@ -76,8 +76,8 @@
 							</CarouselItem>
 						{/each}
 					</CarouselContent>
-					<CarouselPrevious class="top-30 left-2" />
-					<CarouselNext class="top-30 right-2" />
+					<CarouselPrevious class="top-30 -left-0" />
+					<CarouselNext class="top-30 -right-0" />
 				</Carousel>
 			</div>
 		</div>

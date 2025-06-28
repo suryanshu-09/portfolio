@@ -82,13 +82,6 @@
 				'Get your favourite feeds, all in one place! From Youtube to WordPress to News, fetch the latest up to date articles and videos using Feed',
 			link: 'https://github.com/suryanshu-09/webmellon',
 			stack: ['Next.js', 'NextAuth', 'rss-parser', 'Shadcn']
-		},
-		{
-			title: 'Simhash',
-			img: 'assets/simhash.png',
-			description: 'A Golang Implementation of the Simhash Algorithm. Written for We Go Wayback',
-			link: 'https://github.com/suryanshu-09/simhash',
-			stack: ['Golang', 'Python', 'Simhash']
 		}
 	];
 </script>
@@ -114,8 +107,8 @@
 								{@render projectCarousel({ title, img, description, link, stack })}
 							{/each}
 						</CarouselContent>
-						<CarouselPrevious class=" left-2 md:-left-10 2xl:-left-15" />
-						<CarouselNext class="right-2 md:-right-10 2xl:-right-15" />
+						<CarouselPrevious class="-left-6 md:-left-10 2xl:-left-15" />
+						<CarouselNext class="-right-6 md:-right-10 2xl:-right-15" />
 					</Carousel>
 				</div>
 			</div>
@@ -136,8 +129,8 @@
 								{@render projectCarousel({ title, img, description, link })}
 							{/each}
 						</CarouselContent>
-						<CarouselPrevious class="left-2 md:-left-10 2xl:-left-15" />
-						<CarouselNext class="right-2 md:-right-10 2xl:-right-15" />
+						<CarouselPrevious class="-left-6 md:-left-10 2xl:-left-15" />
+						<CarouselNext class="-right-6 md:-right-10 2xl:-right-15" />
 					</Carousel>
 				</div>
 			</div>
