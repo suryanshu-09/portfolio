@@ -5,6 +5,7 @@
 	import CarouselNext from '$lib/components/ui/carousel/carousel-next.svelte';
 	import CarouselPrevious from '$lib/components/ui/carousel/carousel-previous.svelte';
 	import Carousel from '$lib/components/ui/carousel/carousel.svelte';
+	import { Description } from '../lib/components/ui/card';
 	type ProjectProps = {
 		title: string;
 		description: string;
@@ -42,6 +43,14 @@
 		}
 	];
 	let dev = [
+{
+title: 'BCP',
+img: 'assets/bcp.png',
+description:
+'A next-generation protocol for connecting AI assistants to external data, tools, and other agents. BCP addresses fundamental limitations of existing protocols (like MCP) while maintaining ecosystem compatibility. Patent under review.',
+link: 'https://github.com/suryanshu-09/bcp',
+stack: ['Rust', 'Typescript', 'Python', 'gRPC', 'HTTP']
+},
 		{
 			title: 'Hulaki',
 			img: 'assets/hulaki.gif',
