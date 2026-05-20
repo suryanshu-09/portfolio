@@ -43,14 +43,22 @@
 		}
 	];
 	let dev = [
-{
-title: 'BCP',
-img: 'assets/bcp.png',
-description:
-'A next-generation protocol for connecting AI assistants to external data, tools, and other agents. BCP addresses fundamental limitations of existing protocols (like MCP) while maintaining ecosystem compatibility. Patent under review.',
-link: 'https://github.com/suryanshu-09/bcp',
-stack: ['Rust', 'Typescript', 'Python', 'gRPC', 'HTTP']
-},
+    {
+      title: 'BCP',
+      img: 'assets/bcp.png',
+      description:
+        'A next-generation protocol for connecting AI assistants to external data, tools, and other agents. BCP addresses fundamental limitations of existing protocols (like MCP) while maintaining ecosystem compatibility. Patent under review.',
+      link: 'https://github.com/suryanshu-09/bcp',
+      stack: ['Rust', 'Typescript', 'Python', 'gRPC', 'HTTP']
+    },
+    {
+      title: 'Cloud Clips',
+      img: 'assets/clc.jpg',
+      description: 
+        'Cloud Clips is an on-demand barber and salon booking platform connecting clients with barbers for both in-salon and at-home services. Think "Uber for haircuts" - instant booking, real-time availability, seamless payments, and an integrated product marketplace.',
+      link: 'https://github.com/suryanshu-09/cloud-clips',
+      stack: ['Bun', 'React Native', 'Convex', 'Expo', 'Typescript']
+    },
 		{
 			title: 'Hulaki',
 			img: 'assets/hulaki.gif',

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let words = ['Software Developer', 'DevOps Engineer', 'Cybersec Enthusiast'];
+	let words = ['Fulstack Developer', 'Backend Engineer', 'Android Developer'];
 	let currentWord = '';
 	let wordIndex = 0;
 	let charIndex = 0;
