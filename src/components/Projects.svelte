@@ -44,6 +44,13 @@
 	];
 	let dev = [
     {
+      title: 'UnleashWorks',
+      img: 'assets/unleashworks.png',
+      description: 'Desgined a simple single page web application for a client using Next.js and Typescript and launched the website on Vercel.',
+      link: 'https://unleashworks.vercel.app/',
+      stack: ['Next.js', 'Typescript', 'Vercel']
+    },
+    {
       title: 'BCP',
       img: 'assets/bcp.png',
       description:
