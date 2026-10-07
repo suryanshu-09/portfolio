@@ -44,6 +44,14 @@
 	];
 	let dev = [
     {
+      title: 'Holy Grail',
+      img: 'assets/holy-grail.png',
+      description:
+        'AI-powered test-series platform that turns PYQ PDFs into a searchable question bank with RAG over pgvector. Async extract-classify-embed pipeline with hybrid retrieval, LLM quiz generation, and study analytics.',
+      link: 'https://github.com/suryanshu-09/holy_grail',
+      stack: ['Go', 'Next.js', 'pgvector', 'RAG', 'OpenAI', 'Redis', 'Docker']
+    },
+    {
       title: 'UnleashWorks',
       img: 'assets/unleashworks.png',
       description: 'Desgined a simple single page web application for a client using Next.js and Typescript and launched the website on Vercel.',
